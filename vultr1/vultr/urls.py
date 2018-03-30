@@ -19,5 +19,4 @@ from django.conf.urls.static import static
 from django.conf import settings
 urlpatterns = [
     url(r'^', include('server.urls')),
-]
-static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
+] + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
