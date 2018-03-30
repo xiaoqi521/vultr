@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <title>常见问题 | Vultr中文网</title>
+    <meta name="description" content="Q：Vultr一共14个机房到底选哪个？
+A：博主根据长期经验来说，建议选日本节点、其次选美国加州和洛杉矶，如果遇到机器IP被墙，出现无法连接等情况，换个新机器就好了，总会有合适的。博主ping日本节点经常80ms~90ms。
+Q： 购买完VPS无法S"/>
+    <link href="https://buy.shangyufeidi.com/vultr/wp-content/themes/wordbook/style.css" rel="stylesheet">
+    <link href="https://buy.shangyufeidi.com/vultr/wp-content/themes/wordbook/css/bootstrap.css" rel="stylesheet">
+    <link href="https://buy.shangyufeidi.com/vultr/wp-content/themes/wordbook/website.css" rel="stylesheet">
+    <script src="https://buy.shangyufeidi.com/vultr/wp-content/themes/wordbook/js/jquery.min.js"
+            type="text/javascript"></script>
+</head>
+<body>
+{% include 'nav.html' %}
+</div>
+<div class="book-body">
+    <div class="body-inner">
+        <div class="book-header" role="navigation">
+            <h1><a href="{% url 'vultr_issue' %}">常见问题</a></h1>
+        </div>
+        <div class="page-wrapper" tabindex="-1" role="main">
+            <div class="page-inner">
+
+                <section class="normal markdown-section">
+                    <h1 id="常见问题">常见问题<a class="anchorjs-link " href="#常见问题" data-anchorjs-icon=""></a></h1>
+                    <p><span class="sa-last-update-time">最后更新于：2018-3-28</span></p>
+                    <h4 id="Q：Vultr一共14个机房到底选哪个？">Q：Vultr一共15个机房到底选哪个？<a data-anchorjs-icon="" class="anchorjs-link"
+                                                                         href="#Q：Vultr一共15个机房到底选哪个？"></a></h4>
+                    <p class="pb-2"><strong>A</strong>：博主根据长期经验来说，建议选日本节点、其次选美国加州和洛杉矶，如果遇到机器IP被墙，出现无法连接等情况，换个新机器就好了，总会有合适的。博主ping日本节点经常80ms~90ms。
+                    </p>
+                    <h4 id="Q： 购买完VPS无法SSH连接，无法ping通">Q： 购买完VPS无法SSH连接，无法ping通<a data-anchorjs-icon=""
+                                                                                 class="anchorjs-link"
+                                                                                 href="#Q： 购买完VPS无法SSH连接，无法ping通"></a>
+                    </h4>
+                    <p><strong>A</strong>：如果购买后VPS后，出现对应IP迟迟Ping不通，ssh连接不上等情况。这个IP基本上被墙了，也就是说这个IP的前主人瞎搞事情了。我们需要自助更换IP，原理就是重新买一个机器实例，然后再把原机器实例删除。不要担心扣钱，Vultr机器是按小时计算的，这么短的时间也就几分钱。
+                    </p>
+                    <p>具体操作步骤：</p>
+                    <ol>
+                        <li>先不删除实例，购买新实例（避免再次买到这个IP）</li>
+                        <li>测试新IP速度、联通情况，不行的话再买一个新的</li>
+                        <li>删除旧实例（通常创建一小时后才能删除，因为扣费周期是按小时来的）</li>
+                    </ol>
+                    <h4 id="Q：我可以用远程桌面管理VPS吗？">Q：我可以用远程桌面管理VPS吗？<a data-anchorjs-icon="" class="anchorjs-link"
+                                                                   href="#Q：我可以用远程桌面管理VPS吗？"></a></h4>
+                    <p class="pb-2">A：仅有Windows服务器可以通过远程桌面管理，Linux系统请一律通过SSH/VNC进行连接、管理。</p>
+                    <h4 id="Q：连接SSH的工具有哪些推荐？">Q：连接SSH的工具有哪些推荐？<a data-anchorjs-icon="" class="anchorjs-link"
+                                                                 href="#Q：连接SSH的工具有哪些推荐？"></a></h4>
+                    <p class="pb-2">A：站长推荐使用XShell进行管理，SecureCRT和PuTTY也是大家常用程序。</p>
+                </section>
+            </div>
+        </div>
+        <div class="banquan">
+            <script> var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?16b7934b9f17e5acd25d84b4ccb08fd1";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })(); </script>
+        </div>
+    </div>
+    <a href="" rel="nofollow" class="navigation navigation-prev" id="shangyige">
+        <i class="fa fa-angle-left"></i>
+    </a>
+    <a href="" rel="nofollow" class="navigation navigation-next" id="xiayige">
+        <i class="fa fa-angle-right"></i>
+    </a>
+</div>
+</div>
+{% include 'end.html' %}

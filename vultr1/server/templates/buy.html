@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <title>[手把手]图文购买教程 | Vultr中文网</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content="本节我们详细讲解如何购买Vultr主机，整个流程下来你会对购买国外VPS有一个基本认识，之后购买其他VPS流程也是类似的。
+需要注意的一点是：我们一定要自己注册帐号，千万不要找人代购，因为代购存在很大的风险，VPS可能被植入后门程序，"/>
+    <link href="../static/css/style.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/website.css" rel="stylesheet">
+    <script src="../static/js/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+{% include 'nav.html' %}
+</div>
+</div>
+<div class="book-body">
+    <div class="body-inner">
+        <div class="book-header" role="navigation">
+            <h1><a href="{% url 'vultr_buy' %}">vultr图文购买教程</a></h1>
+        </div>
+        <div class="page-wrapper" tabindex="-1" role="main">
+            <div class="page-inner">
+
+                <section class="normal markdown-section">
+                    <h1 id="图文购买教程">vultr图文购买教程<a class="anchorjs-link " href="#[手把手]图文购买教程"
+                                                       data-anchorjs-icon=""></a></h1>
+                    <p><span class="sa-last-update-time">最后更新于：2018-01-20</span></p>
+                    <p>本节我们详细讲解如何购买Vultr主机，整个流程下来你会对购买国外VPS有一个基本认识，之后购买其他VPS流程也是类似的。</p>
+                    <p><strong>需要注意的一点是：我们一定要自己注册帐号，<span style="color: #ff0000;">千万不要找人代购</span>，因为代购存在很大的风险，VPS可能被植入后门程序，十分危险，而且被主机商发现会被封号处理。</strong>
+                    </p>
+                    <p>注册注册<a href="" target="_blank" rel="nofollow">Vultr</a>账户还是很简单的，基本上3-5分钟就可以搞定。下面就给大家详细讲解<a
+                            href="/vultr/go/" target="_blank" rel="nofollow">Vultr</a>的购买流程。</p>
+                    <h1 id="为什么选用vultr">为什么选用Vultr</h1>
+
+                    <blockquote>
+                        <p>
+                            大家都知道国内的阿里云做的最好，我之前一直用阿里云的，但是阿里云的价格有点小贵，国内的服务器又要备案才能绑定DNS，再加上需要翻墙访问谷歌，因此通过对比，找了一个后台易用性很高的Vultr。</p>
+                    </blockquote>
+
+
+                    <h2 id="vultr的优点如下">Vultr的优点如下</h2>
+
+                    <ul>
+                        <li>后台简洁大方，一看就懂</li>
+                        <li>服务器是计时的，就是用的不爽可以删掉，只扣掉用了的钱，剩下的还在余额里</li>
+                        <li>国外一般都是使用信用卡或者paypal，但是Vultr可以用支付宝扫码支付</li>
+                    </ul>
+
+                    <blockquote>
+                        <p>价格最低是2.5美元，我买的时候已经售空了。所以买的是5美元每月的，位置选的是洛杉矶</p>
+                    </blockquote>
+
+
+                    <h2 id="操作步骤">操作步骤</h2>
+
+                    <ol>
+                        <li>首先，打开Vultr的主页：<a href="https://www.vultr.com/?ref=7229529">点击打开</a>，打开后如图所示</li>
+                    </ol>
+
+                    <p><img src="https://img-blog.csdn.net/20171014232835018" alt="" title=""></p>
+
+                    <ol>
+                        <li>点击Create Account 创建账户</li>
+                    </ol>
+
+                    <p><img src="https://img-blog.csdn.net/20171014232840528" alt="" title=""></p>
+
+                    <ol>
+                        <li>输入邮箱和要设置的登录密码</li>
+                    </ol>
+
+                    <p><img src="https://img-blog.csdn.net/20171014232843533" alt="" title=""></p>
+
+                    <blockquote>
+                        <p>注意：输入密码时的要求 <br>
+                            - 至少十个字符 <br>
+                            - 至少有一个大写字母 <br>
+                            - 至少有一个小写字母 <br>
+                            - 至少有一个数字</p>
+                    </blockquote>
+
+                    <ol>
+                        <li>注册成功后，登录账号密码，下面是登录成功后的页面</li>
+                    </ol>
+
+                    <p><img src="https://img-blog.csdn.net/20171014232846761" alt="" title=""></p>
+
+                    <p>如图所示，我将主要的地方标注出来了。要购买服务器的话，有如下几个步骤：</p>
+
+                    <ul>
+                        <li>点击账户，进行完善账户信息，这样才能更好保护我们的权益，有消息及时发送到我们邮箱中。</li>
+                        <li>充值，点击支付宝进行账户充值，会自动按照比例用人民币充值，建议充值$10.</li>
+                        <li>充值后点击server服务器，购买自己需要的相应的服务，这里以centos，洛杉矶，$5为例。</li>
+                    </ul>
+
+                    <p><img src="https://img-blog.csdn.net/20171014232850323" alt="" title=""></p>
+
+                    <p><img src="https://img-blog.csdn.net/20171014234801107" alt="" title=""></p>
+
+                    <p><img src="https://img-blog.csdn.net/20171014234820754" alt="" title=""></p>
+
+                    <p><img src="https://img-blog.csdn.net/20171014234825864" alt="" title=""></p>
+
+                    <p><img src="https://img-blog.csdn.net/20171014234836464" alt="" title=""></p>
+
+                    <p>因为已经充值了，直接点击 <strong>Deploy now</strong> 即可</p>
+
+
+                    <h1 id="注册中可能遇到的问题">注册中可能遇到的问题</h1>
+
+                    <p>1.有些时候会遇到点击注册后没有收到邮件的问题，重新登录提示如下信息，大概意思是用户已经注册了。</p>
+
+                    <p>
+                        <img src="https://img-blog.csdn.net/20171016201220302?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZGFvY2h1d2Vueml5YW8=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center"
+                             alt="" title=""></p>
+
+                    <p>解决办法是：点击 <em>Request Forgotten Password</em>，这时候邮箱就会收到一封信息，点击链接进行修改密码即可。</p>
+
+                    <p>2.购买完服务器之后ping不通，Xshell也连接不上。</p>
+
+                    <p>这种情况是由于上一个用该ip的人做坏事被墙了，所以新建服务，这时候会有不同的ip，直到能ping通为止。再把其他的服务删掉server destroy即可。</p>
+
+                    <h1 id="尽情畅享">尽情畅享</h1>
+
+                    <p>购买完以后,点击<strong>Server</strong>可以看到服务器列表</p>
+
+                    <p><img src="https://img-blog.csdn.net/20171014232853310" alt="" title=""></p>
+
+                    <p>点击你的列表，就可以看到服务器的详细信息了</p>
+
+                    <p><img src="https://img-blog.csdn.net/20171014232856055" alt="" title=""></p>
+
+                    <p>这里有你的，服务器地址，服务器用户名，服务器的密码。有了这些就可以进行远程访问了，开启你的起飞之旅吧！</p>
+
+
+                    <link rel="stylesheet"
+                          href="https://csdnimg.cn/release/phoenix/production/markdown_views-68a8aad09e.css"/>
+                </section>
+            </div>
+        </div>
+        <div class="banquan">
+            <script> var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?16b7934b9f17e5acd25d84b4ccb08fd1";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })(); </script>
+        </div>
+    </div>
+    <a href="" rel="nofollow" class="navigation navigation-prev" id="shangyige">
+        <i class="fa fa-angle-left"></i>
+    </a>
+    <a href="" rel="nofollow" class="navigation navigation-next" id="xiayige">
+        <i class="fa fa-angle-right"></i>
+    </a>
+</div>
+</div>
+{% include 'end.html' %}

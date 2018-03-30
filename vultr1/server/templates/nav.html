@@ -1,0 +1,43 @@
+<div class="book">
+    <div class="book-summary">
+        <div id="book-search-input">
+            <form action="/vultr" method="get">
+                <input type="text" name="s" placeholder="搜索">
+            </form>
+        </div>
+        <style>
+            .sa-logo {
+                background: url('/static/images/logo_onwhite1.png') no-repeat;
+                background-size: contain;
+                background-position: 16px center;
+                height: 48px;
+                width: 100%;
+                display: block;
+            }
+        </style>
+        <div class="logo">
+            <a href="/vultr/" title="" class="sa-logo"></a>
+        </div>
+        <nav class="navbox">
+            <ul id="menu-%e4%be%a7%e8%be%b9%e6%a0%8f%e5%af%bc%e8%88%aa" class="summary">
+                <li id="menu-item-67"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-45 current_page_item menu-item-67">
+                    <a href="{% url 'vultr_index' %}">Vultr中文</a></li>
+                <li id="menu-item-68" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a
+                        href="{% url 'vultr_activity' %}">专属优惠码</a></li>
+                <li id="menu-item-69"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-69">
+                    <a href="{% url 'vultr_course' %}">Vultr教程</a>
+                    <ul class="sub-menu">
+                        <li id="menu-item-74"
+                            class="menu-item menu-item-type-post_type menu-item-object-post menu-item-74"><a
+                                href="{% url 'vultr_buy' %}">图文购买教程</a></li>
+                        <li id="menu-item-72"
+                            class="menu-item menu-item-type-post_type menu-item-object-post menu-item-72"><a
+                                href="{% url 'vultr_ssh' %}">通过SSH管理服务器</a></li>
+                    </ul>
+                </li>
+                <li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75"><a
+                        href="{% url 'vultr_issue' %}">常见问题</a></li>
+            </ul>
+        </nav>

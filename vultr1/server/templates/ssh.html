@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <title>通过SSH管理服务器 | Vultr中文网</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content="在这篇文章中，我们演示开通VPS主机之后，获取需要的远程登入账户信息，利用SSH客户端，从而对Linux服务器进行管理的过程。
+1.前期准备工作
+请先参照《图文购买教程》，购买合适的VPS，并获取到当前VPS信息。
+
+这里我们可以看到当前服务"/>
+    <link href="../static/css/style.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/website.css" rel="stylesheet">
+    <script src="../static/js/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+{% include 'nav.html' %}
+
+
+</div>
+<div class="book-body">
+    <div class="body-inner">
+        <div class="book-header" role="navigation">
+            <h1><a href="{% url 'vultr_ssh' %}">通过SSH管理服务器</a></h1>
+        </div>
+        <div class="page-wrapper" tabindex="-1" role="main">
+            <div class="page-inner">
+
+                <section class="normal markdown-section">
+                    <h1 id="通过SSH管理服务器">通过SSH管理服务器<a class="anchorjs-link " href="#通过SSH管理服务器"
+                                                     data-anchorjs-icon=""></a></h1>
+                    <p><span class="sa-last-update-time">最后更新于：2018-01-01</span></p>
+                    <p>在这篇文章中，我们演示开通VPS主机之后，获取需要的远程登入账户信息，利用SSH客户端，从而对Linux服务器进行管理的过程。</p>
+                    <p><strong><span style="font-size: 14pt;">1.前期准备工作</span></strong></p>
+                    <p>请先参照<a href="{% url 'vultr_buy' %}" target="_blank" rel="noopener" rel="nofollow">《图文购买教程》</a>，购买合适的VPS，并获取到当前VPS信息。
+                    </p>
+                    <p><img class="alignnone size-full wp-image-157"
+                            src="/static/images/" alt="" width="501" height="279"
+                            srcset="/static/images/1.png 501w, /static/images/1.png 300w"
+                            sizes="(max-width: 501px) 100vw, 501px"/></p>
+                    <p>这里我们可以看到当前服务器的IP、ROOT密码（点击箭头的眼睛图标可以看到）。然后我们通过相关的SSH工具管理服务器。</p>
+                    <p><span style="font-size: 14pt;"><strong>2.Windows用户登录VPS</strong></span></p>
+                    <p>推荐使用XShell，请安装最新版本。XShell官网下载：</p>
+                    <p>http://www.netsarang.com/products/xsh_overview.html</p>
+                    <p>下载需要填个邮箱，然后它会把下载链接发到邮箱。按照要求安装成功后运行XShell，新建连接即可。</p>
+                    <p><img class="alignnone size-full wp-image-158"
+                            src="/static/images/vultr_ssh_2.jpg" alt="" width="482" height="300"
+                            srcset="/static/images/vultr_ssh_2.jpg 482w, /static/images/vultr_ssh_2.jpg 300w"
+                            sizes="(max-width: 482px) 100vw, 482px"/></p>
+                    <p><img class="alignnone size-full wp-image-159"
+                            src="/static/images/vultr_ssh_3.jpg" alt="" width="522" height="332"
+                            srcset="/static/images/vultr_ssh_3.jpg 522w, /static/images/vultr_ssh_3.jpg 300w"
+                            sizes="(max-width: 522px) 100vw, 522px"/></p>
+                    <p><img class="alignnone size-full wp-image-160"
+                            src="/static/images/vultr_ssh_4.jpg" alt="" width="502" height="305"
+                            srcset="/static/images/vultr_ssh_4.jpg 502w,/static/images/vultr_ssh_4.jpg 300w"
+                            sizes="(max-width: 502px) 100vw, 502px"/></p>
+                    <p>这里我们可以登入进来。直接在这个界面输入命令安装系统或者安装其他工具都可以。</p>
+                    <p><strong><span style="font-size: 14pt;">2.Linux用户登录VPS</span></strong></p>
+                    <p>打开终端，输入命令：</p>
+                    <blockquote><p>ssh -p 端口号 用户名@IP地址</p></blockquote>
+                    <p>如：</p>
+                    <blockquote><p>ssh -p 25636 root@188.155.133.111</p></blockquote>
+                    <p>接着按照提示输入密码即可。</p>
+                    <p><strong><span style="font-size: 14pt;">3.Mac用户登录VPS</span></strong></p>
+                    <p>可以打开终端进行登录，方法同Linux用户；也可以安装SSH客户端，如shuttle等。</p>
+                    <p><strong><span style="font-size: 14pt;">4.手机登录VPS</span></strong></p>
+                    <p>下载一个SSH客户端，安卓用户可以安装JuiceSSH，iPhone用户可以安装iTerminal等等。</p>
+                </section>
+            </div>
+        </div>
+        <div class="banquan">
+            <script> var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?16b7934b9f17e5acd25d84b4ccb08fd1";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })(); </script>
+        </div>
+    </div>
+    <a href="" rel="nofollow" class="navigation navigation-prev" id="shangyige">
+        <i class="fa fa-angle-left"></i>
+    </a>
+    <a href="" rel="nofollow" class="navigation navigation-next" id="xiayige">
+        <i class="fa fa-angle-right"></i>
+    </a>
+</div>
+</div>
+{% include 'end.html' %}
