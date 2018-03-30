@@ -1,8 +1,9 @@
-<script src="{{ STATIC_URL }}js/js.js"></script>
-<script src="{{ STATIC_URL }}js/book.js"></script>
-<script src="{{ STATIC_URL }}js/theme.js"></script>
-<script src="{{ STATIC_URL }}js/bootstrap.js"></script>
-<script src="{{ STATIC_URL }}js/fontsettings.js"></script>
+{% load staticfiles %}
+<script src="{% static 'js/js.js' %}"></script>
+<script src="{% static 'js/book.js'%}"></script>
+<script src="{% static 'js/theme.js'%}"></script>
+<script src="{% static 'js/bootstrap.js'%}"></script>
+<script src="{% static 'js/fontsettings.js'%}"></script>
 <p class="text-center">
     <small></small>
 </p>

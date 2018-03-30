@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -10,11 +11,11 @@
 新用户条件
 ① 使用不同邮箱注册账号
 ②使用不同支付方式进行付款，本次活动仅支持Paypal和信用卡付款，不"/>
-    <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet">
+    <link href="{% static 'css/style.css'%}" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ STATIC_URL }}css/website.css" rel="stylesheet">
-    <script src="{{ STATIC_URL }}js/jquery.min.js" type="text/javascript"></script>
+    <link href="{% static 'css/website.css' %}" rel="stylesheet">
+    <script src="{% static 'js/jquery.min.js' %}"type="text/javascript"></script>
 </head>
 <body>
 {% include 'nav.html' %}

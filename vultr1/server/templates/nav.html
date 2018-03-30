@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <div class="book">
     <div class="book-summary">
         <div id="book-search-input">
@@ -7,7 +8,7 @@
         </div>
         <style>
             .sa-logo {
-                background: url('{{ STATIC_URL }}images/logo_onwhite1.png') no-repeat;
+                background: url('{% static 'images/logo_onwhite1.png' %}') no-repeat;
                 background-size: contain;
                 background-position: 16px center;
                 height: 48px;

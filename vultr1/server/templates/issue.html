@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -9,12 +10,11 @@
     <meta name="description" content="Q：Vultr一共14个机房到底选哪个？
 A：博主根据长期经验来说，建议选日本节点、其次选美国加州和洛杉矶，如果遇到机器IP被墙，出现无法连接等情况，换个新机器就好了，总会有合适的。博主ping日本节点经常80ms~90ms。
 Q： 购买完VPS无法S"/>
-    <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet">
+    <link href="{% static 'css/style.css'%}" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ STATIC_URL }}css/website.css" rel="stylesheet">
-    <script src="{{ STATIC_URL }}js/jquery.min.js"
-            type="text/javascript"></script>
+    <link href="{% static 'css/website.css' %}" rel="stylesheet">
+    <script src="{% static 'js/jquery.min.js' %}"type="text/javascript"></script>
 </head>
 <body>
 {% include 'nav.html' %}
