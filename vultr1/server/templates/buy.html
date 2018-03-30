@@ -9,11 +9,11 @@
     <meta name="keywords" content=""/>
     <meta name="description" content="本节我们详细讲解如何购买Vultr主机，整个流程下来你会对购买国外VPS有一个基本认识，之后购买其他VPS流程也是类似的。
 需要注意的一点是：我们一定要自己注册帐号，千万不要找人代购，因为代购存在很大的风险，VPS可能被植入后门程序，"/>
-    <link href="../static/css/style.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../static/css/website.css" rel="stylesheet">
-    <script src="../static/js/jquery.min.js" type="text/javascript"></script>
+    <link href="{{ STATIC_URL }}css/website.css" rel="stylesheet">
+    <script src="{{ STATIC_URL }}js/jquery.min.js" type="text/javascript"></script>
 </head>
 <body>
 {% include 'nav.html' %}
@@ -35,7 +35,7 @@
                     <p><strong>需要注意的一点是：我们一定要自己注册帐号，<span style="color: #ff0000;">千万不要找人代购</span>，因为代购存在很大的风险，VPS可能被植入后门程序，十分危险，而且被主机商发现会被封号处理。</strong>
                     </p>
                     <p>注册注册<a href="" target="_blank" rel="nofollow">Vultr</a>账户还是很简单的，基本上3-5分钟就可以搞定。下面就给大家详细讲解<a
-                            href="/vultr/go/" target="_blank" rel="nofollow">Vultr</a>的购买流程。</p>
+                            href="{% url 'vultr_buy' %}" target="_blank" rel="nofollow">Vultr</a>的购买流程。</p>
                     <h1 id="为什么选用vultr">为什么选用Vultr</h1>
 
                     <blockquote>

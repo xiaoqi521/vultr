@@ -12,11 +12,11 @@
 请先参照《图文购买教程》，购买合适的VPS，并获取到当前VPS信息。
 
 这里我们可以看到当前服务"/>
-    <link href="../static/css/style.css" rel="stylesheet">
+    <link href=".{{ STATIC_URL }}css/style.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../static/css/website.css" rel="stylesheet">
-    <script src="../static/js/jquery.min.js" type="text/javascript"></script>
+    <link href="{{ STATIC_URL }}css/website.css" rel="stylesheet">
+    <script src="{{ STATIC_URL }}js/jquery.min.js" type="text/javascript"></script>
 </head>
 <body>
 {% include 'nav.html' %}
@@ -61,11 +61,11 @@
                             srcset="/static/images/vultr_ssh_4.jpg 502w,/static/images/vultr_ssh_4.jpg 300w"
                             sizes="(max-width: 502px) 100vw, 502px"/></p>
                     <p>这里我们可以登入进来。直接在这个界面输入命令安装系统或者安装其他工具都可以。</p>
-                    <p><strong><span style="font-size: 14pt;">2.Linux用户登录VPS</span></strong></p>
+                    <p><strong><span style="font-size: 14pt;">2.Linux用户登录服务器</span></strong></p>
                     <p>打开终端，输入命令：</p>
-                    <blockquote><p>ssh -p 端口号 用户名@IP地址</p></blockquote>
+                    <blockquote><p>ssh  用户名@IP地址</p></blockquote>
                     <p>如：</p>
-                    <blockquote><p>ssh -p 25636 root@188.155.133.111</p></blockquote>
+                    <blockquote><p>ssh root@127.0.0.1</p></blockquote>
                     <p>接着按照提示输入密码即可。</p>
                     <p><strong><span style="font-size: 14pt;">3.Mac用户登录VPS</span></strong></p>
                     <p>可以打开终端进行登录，方法同Linux用户；也可以安装SSH客户端，如shuttle等。</p>
